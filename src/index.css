@@ -1,0 +1,63 @@
+*{
+  font-family:  Helvetica,Arial, sans-serif;
+}
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  padding: 60px;
+}
+
+input{
+  width: 100%;
+  font-size: 1.2rem;
+  outline-style: none;
+  padding: 3px 2px;
+  background-color: #242424;
+  color: lavender;
+}
+
+.card{
+  align-content: center;
+  border: 1px solid grey;
+  border-radius: 6px;
+  box-shadow:0px 0px 7px 0.5px #FFFF;
+  overflow: hidden;
+  margin-bottom: 10px;
+  height: 250px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card p{
+  padding: 5px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.card img{
+  width: 100%;
+  height: 200px;
+  padding: 0;
+}
+
+.card-grid{
+  display: grid;
+  grid-template-columns:repeat(auto-fit, minmax(
+    200px, 1fr
+  ));
+  gap: 16px;
+}
